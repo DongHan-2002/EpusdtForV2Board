@@ -1,8 +1,8 @@
-**❗️特别声明：本项目乃作者研究学习的开源项目，不提供任何形式的收费服务(谨防诈骗)；使用过程中遇见问题请提`issue` 或群里交流，对于信息完整的问题看心情回复，请自重！**
+**❗️特别声明：本项目乃作者研究学习的开源项目！**
 
 # EpusdtForV2Board
 
-> 该程序是用于[V2Board](https://github.com/v2board/v2board)对接[Epusdt](https://github.com/v03413/bepusdt)的支付插件
+> 该程序是用于[V2Board](https://github.com/v2board/v2board)对接[Epusdt](https://github.com/v03413/bepusdt)的支付插件，可以让V2Board支持USDT付款方式！
 
 ### 使用方法：
 
