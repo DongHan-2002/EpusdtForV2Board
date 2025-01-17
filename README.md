@@ -1,0 +1,2 @@
+# EpusdtForV2Board
+用于V2Board对接Epusdt的插件
