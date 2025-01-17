@@ -12,22 +12,25 @@ class Epusdt {
         return [
             'url' => [
                 'label' => 'API接口的网址(包含最后的斜杠)',
-                'description' => '',
+                'description' => 'http://127.0.0.1/',
                 'type' => 'input',
             ],
             'key' => [
-                'label' => 'API KEY',
+                'label' => 'KEY',
                 'description' => '输入设置的Key',
+                'type' => 'input',
+            ],
+            'trade_type' => [
+                'label' => 'TradeType',
+                'description' => '请输入usdt.trc20 或 tron.trx（需要正确输入，不懂得去看Epusdt文档）',
                 'type' => 'input',
             ],
         ];
     }
 
     public function pay($order) {
-        
-        
         $param = [
-            'trade_type'   => 'tron.trx',
+            'trade_type'   => $order['trade_type'],
             'amount' => $order['total_amount'] / 100,
             'order_id' => $order['trade_no'],
             'notify_url' => $order['notify_url'],
