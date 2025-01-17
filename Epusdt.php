@@ -21,7 +21,7 @@ class Epusdt {
                 'type' => 'input',
             ],
             'trade_type' => [
-                'label' => 'TradeType',
+                'label' => '支付类型（usdt.trc20 或 tron.trx）',
                 'description' => '请输入usdt.trc20 或 tron.trx（需要正确输入，不懂得去看Epusdt文档）',
                 'type' => 'input',
             ],
@@ -30,7 +30,7 @@ class Epusdt {
 
     public function pay($order) {
         $param = [
-            'trade_type'   => $order['trade_type'],
+            'trade_type'   => $this->config['trade_type'],
             'amount' => $order['total_amount'] / 100,
             'order_id' => $order['trade_no'],
             'notify_url' => $order['notify_url'],
